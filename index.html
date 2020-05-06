@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="assets/shuffle-text.js"></script>
+	<link rel="stylesheet" href="assets/styles.css">
+	<script src="assets/js.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<title>Ezzy</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	
+</head>
+<body>
+	<div class="nav">
+		<a class="caja" href="index.html">/_ Home</a></br>
+		<a class="caja" id="active" href="how to purchase.html">/_ Purchase</a></br>
+		<a class="caja" id="active" href="prices.html">/_ Prices</a></br>
+		<a class="caja" href="showcase.html">/_ Showcase</a></br>
+	</div>	
+<div class="content">
+  <a id="myBtn" onclick="myFunction()">Unmute</a>
+</div>
+	<div id="main">
+		<h1>Telzy.xyz</h1>
+		<a id="link" onclick="alert('𝒆𝒛𝒛𝒚 ダ#6592');">Discord of Ezzy</a> -
+		<a id="link" onclick="alert('𝑻𝒆𝒍3𝒈𝒚 ダ#7439');">Discord of Telgy</a> -
+		<a id="link" href="https://discord.gg/tXVTKjZ">Discord Server</a>
+	</div>
+
+	<video  video autoplay muted loop id="myVideo">
+  	<source src="song.mp4" type="video/mp4">
+</body>
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+var one = document.getElementsByClassName("caja")
+
+    for (var i = 0; i < one.length; i++) {
+        var text = new ShuffleText(one[i]);
+		text.start();
+	}
+var vid = document.getElementById("myVideo");
+vid.volume = 0.2;
+function myFunction() {
+  if (video.muted) {
+    video.muted = false;
+    btn.innerHTML = "Mute";
+  } else {
+    video.muted = true;
+    btn.innerHTML = "Unmute";
+  }
+}
+</script>
+</html>
